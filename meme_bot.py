@@ -1,8 +1,9 @@
 import discord
 import requests
 import random
+import os
 
-TOKEN = 'MTIyNTg1Njc4NjM2MDE3NjcyMg.GJPSPx.8G5W0izOFhyl0c60DOeMLrieEQt_5r6tg8V1Bg'
+TOKEN = os.getenv('DISCORD_TOKEN')
 
 intents = discord.Intents.default()
 client = discord.Client(intents=intents)
