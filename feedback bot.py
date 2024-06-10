@@ -10,8 +10,8 @@ intents.message_content = True  # Enable access to message content
 # Initialize the bot with a command prefix
 bot = commands.Bot(command_prefix='!', intents=intents)
 
-# Bot token (replace with your actual token)
-TOKEN = 'MTIyNTg1Njc4NjM2MDE3NjcyMg.GJPSPx.8G5W0izOFhyl0c60DOeMLrieEQt_5r6tg8V1Bg'
+
+TOKEN = os.getenv('DISCORD_TOKEN')
 
 # Event handler for when the bot has connected to Discord
 @bot.event
@@ -58,4 +58,4 @@ async def read_feedback(ctx):
         await ctx.send(chunk)
 
 # Run the bot
-bot.run(os.getenv('DISCORD_TOKEN'))
+bot.run(TOKEN)
