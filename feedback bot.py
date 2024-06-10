@@ -10,8 +10,8 @@ intents.message_content = True  # Enable access to message content
 # Initialize the bot with a command prefix
 bot = commands.Bot(command_prefix='!', intents=intents)
 
-
-TOKEN = os.getenv('DISCORD_TOKEN')
+# Bot token (replace with your actual token)
+TOKEN ="your bot token"
 
 # Event handler for when the bot has connected to Discord
 @bot.event
