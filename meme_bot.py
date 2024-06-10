@@ -40,6 +40,6 @@ async def on_message(message):
             embed.set_image(url=url)
             await message.channel.send(embed=embed)
         else:
-            await message.channel.send('Could not fetch a meme at the moment. Please try again later.')
+            await message.channel.send('No memes available at the moment!!')
 
 client.run(TOKEN)
