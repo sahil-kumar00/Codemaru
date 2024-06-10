@@ -58,4 +58,4 @@ async def read_feedback(ctx):
         await ctx.send(chunk)
 
 # Run the bot
-bot.run(TOKEN)
+bot.run(os.getenv('DISCORD_TOKEN'))
