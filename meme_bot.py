@@ -11,7 +11,7 @@ intents.message_content = True  # Enable access to message content
 bot = commands.Bot(command_prefix='!', intents=intents)
 
 # Bot token (replace with your actual token)
-TOKEN = 'your bot token'
+TOKEN = os.getenv('DISCORD_TOKEN')
 
 # Event handler for when the bot has connected to Discord
 @bot.event
